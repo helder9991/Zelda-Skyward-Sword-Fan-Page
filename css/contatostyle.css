@@ -1,0 +1,32 @@
+
+div#container{
+    display: inline-flex;
+    margin-left: 160px;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 1%;
+    padding: 35px 200px;
+}
+
+div#container form#form{
+    margin-top: 100px;
+    font-size: 18pt;
+}
+div#container form#form input, div#divmensagem{
+    margin-top: 45px;
+}
+
+div#container form#form input#entrar{
+    width: 200px;
+    height: auto;
+    
+    margin-left: 70px;
+}
+div#container img.imagem{
+    width: 200px;
+    height: auto;
+    margin-left: 80px;
+}
+
+footer#rodape{
+    top:1080px;
+}

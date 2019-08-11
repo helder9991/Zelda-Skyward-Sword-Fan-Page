@@ -1,0 +1,46 @@
+img#linhadotempo{
+    position: absolute;
+    width: 100%;
+    margin-top: -10px;
+}
+
+footer#rodape{
+    height: 100px;
+    position: absolute;
+    top:2025px;
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #12073b;
+}
+
+
+footer#rodape nav#menurodape{
+    position:absolute;
+    top: 20px;
+    left: calc((100% - 902px)/2);
+}
+
+footer#rodape nav#menurodape ul{
+    list-style-type: none;
+    margin-left: 180px;
+}
+footer#rodape nav#menurodape ul li{
+    display: inline-flex;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer#rodape nav#menurodape ul li a{
+    width: 100%;
+    padding: 5px 20px 0px;
+    font-family: ZeldaFont;
+    color: #877cb0;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+footer#rodape nav#menurodape ul li a:hover{
+    text-decoration: underline;
+    color: #877cb0;
+}

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>The Legend of Zelda</title>
+    <link rel='stylesheet' type='text/css' href='../css/iniciostyle.css'>
+    <link rel='stylesheet' type='text/css' href='../css/cenariosstyle.css'>
+    <link rel="icon" href="../imagem/triforce.png" >
+    <script src='../js/script.js'></script>
+</head>
+
+<body onload="mostraCenario('')">
+    
+    <header id="cabecalho">
+        <img id="logo" src="../imagem/tlozsslogo.png" />
+        <nav id="menu">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="linhadotempo.html">Linha do Tempo</a></li>
+                <li><a href="cenarios.html">Cenarios</a></li>
+            </ul>
+            <h1 class="indexador">Menu Principal</h1>
+        </nav>
+    </header>
+    <!-- Interface do site -->
+    <section id="interface">
+
+        <!-- Menu Lateral -->
+        <div id="menulateral">
+            <!-- Mapa -->
+            <div onclick="mostraMapa()" ondblclick="someMapa()" id="divmapa" >
+                <a href="../imagem/cenarios/mapa.jpg"><img id="mapaicon" src="../imagem/mapa.png"/></a>
+            </div>
+            
+            <!-- Menus -->
+            <p class="titulo">Céu</p>
+            <ul>
+                <li id="lblskyloft" class="subtitulo" onclick="mostraCenario('skyloft')">Skyloft</li>
+                <li id="lblthunderhead" class="subtitulo" onclick="mostraCenario('thunderhead')">Thunderhead</li>
+                <li id="lblpumpkin" class="subtitulo" onclick="mostraCenario('pumpkin')">Pumpkin Landing</li>
+                <li id="lbloutrasIlhas" class="subtitulo" onclick="mostraCenario('outrasIlhas')">Outras Ilhas</li>
+            </ul>
+            <p class="titulo">Superficie</p>
+            <ul>
+                <li id="lblfaron" class="subtitulo" onclick="mostraCenario('faron')">Faron Woods</li>
+                <li id="lbleldin" class="subtitulo" onclick="mostraCenario('eldin')">Eldin Volcano</li>
+                <li id="lbllanayru" class="subtitulo" onclick="mostraCenario('lanayru')">Lanayru Desert</li>
+            </ul>
+        </div>
+
+        <!-- Cenarios -->
+        <aside id="cenarios">
+            
+            <!-- SkyLoft -->
+            <div class="item" id="skyloft">
+                <p class="titulocenario">Skyloft</p>
+                <p class="descricao">
+                    Skyloft, tambem conhecida como a Ilha da Deusa, e uma serie de grandes ilhas flutuantes
+                    acima das nuvens em Skyward Sword. A ilha principal inclui o Bazar, uma grande area residencial
+                    trimestre, uma casa de banhos, bem como uma praca e a Torre da Luz.
+                </p>
+
+                <img class="imagem" src="../imagem/cenarios/skyloft.jpg"/>
+                <p class="legenda">Visão completa de Skyloft</p>
+                
+                <p class="descricao">
+                    Skyloft foi criado no final da Era da Deusa Hylia quando uma rachadura na terra apareceu, e
+                    da fissura veio Demise e suas hordas demoniacas. Eles lancaram um ataque macico ao mundo conhecido
+                    como a Superficie, queimando florestas ate virar cinzas, sufocando as fontes doces da terra e matando sem
+                    hesitacao. Hylia reuniu os Hylians sobreviventes em um pequeno afloramento de terra e os enviou para o ceu
+                    junto com a Triforce para protege-los e a reliquia sagrada das hordas demoniacas que haviam invadido
+                    a superficie. Este lote de terra tornou-se conhecido como a Ilha da Deusa e junto com outros flutuantes
+                    Ilhas constituiu a nova casa dos Hylians, que ficou conhecida como Skyloft.
+                </p>
+
+                <img class="imagem" style="max-height: 100%;margin-left: calc(100% - 98%);" src="../imagem/cenarios/estatua_da_deusa.png">
+                <p class="legenda">Estatua da deusa</p>
+                
+                <p class="descricao">
+                    A fim de evitar que o poder sagrado caisse nas mãos de Demise, Hylia também escondeu os portais para
+                    os tres pedacos da Triforce dentro do Sky Keep, e consagrou a Espada da Deusa dentro da Estátua de
+                    a Deusa, deixando-a para ser encontrada por um heroi escolhido quando a hora certa chegar. Skyloft permaneceu
+                    no ceu acima das nuvens por geracoes, e conhecimento da superficie e as origens do Skyloft
+                    tornou-se nada mais que uma lenda. No entanto, apesar do conhecimento de suas origens irem diminuindo,
+                    as pessoas atualmente de Skyloft ainda conhecem a Deusa Hylia e acreditavam que ela estava cuidando delas naquele dia,
+                    e nao sabem que ela (a deusa Hylia) ainda esta vivendo entre eles em uma forma mortal no que era agora conhecido como a Era do Ceu.
+                </p>
+                
+                <p class="descricao">
+                    25 anos antes dos eventos de Skyward Sword, o pessoal da Skyloft criou a Knight Academy, uma
+                    escola para os Cavaleiros de Skyloft, e a Wing Ceremony, um evento anual onde os alunos do Knight
+                    Academia competiram na cerimônia para avancar para o proximo nivel na classe. A cerimônia da asa conclui
+                    com o vencedor reencenando o papel do Heroi da Deusa de muito tempo atras com outro estudante fazendo o
+                    papel da propria Deusa. Nos presentes eventos da historia, Link compete contra Cawlin,
+                    Strich e Groose na cerimônia, ganhando e conseguindo passar tempo pessoal com Zelda, fazendo o
+                    papel da Deusa e dando-lhe o Sailcloth (tecido utilizado como paraquedas) que ela fez. Quando ela esta prestes a dizer Link alguma coisa
+                    pessoal que tem estado em sua mente, ela e arrastada para o mundo da superficie por um tornado conjurado por
+                    Ghirahim, Link tenta seguir com seu Loftwing, mas e jogado pelo tornado para tras o deixando inconsciente.
+                    Link acorda em sua cama e conta a Gaepora sobre os eventos do dia. Gaepora assegura Link que
+                    Zelda ainda esta viva e diz a ele para descansar. Link de repente ouve uma voz estranha entao abre a porta,
+                    vendo uma figura estranha. Link segue a figura enquanto ela flutua para longe dele, e o leva para o
+                    interior da estatua da deusa. Apos a entrada, a figura se revela Fi e instrui
+                    Link para retirar a sagrada Espada da Deusa e levanta-la em direcão ao ceu. Depois Link levanta o
+                    espada, Gaepora entra e fica chocado com o que ve, pois Link e o Heroi que foi escolhido pela Deusa Hylia. Fi da a Esmeralda Tablet a  Link e o instrui
+                    para colocar o tablet no altar. Depois que Link faz isso, uma fenda nas nuvens se forma, revelando um caminho
+                    para A Superficie, onde Fi diz esta a localizacao de Zelda. Tarde no jogo depois de aprender a Cancao do Heroi
+                    de Levias, Link descobre o Sky Keep, um antigo templo que foi construido dentro da Ilha do
+                    Deusa com o unico proposito de proteger a Triforce. Depois de se aventurar dentro e receber a
+                    Triforce, Link deseja para a erradicacao do Demise, e a Ilha da Deusa se separa do
+                    restante da Skyloft e comeca a descer em direcao a superficie. A ilha se instala no grande poco espiral
+                    no Sealed Grounds, destruindo com sucesso o Demise.                
+                </p>
+
+                <p class="descricao">
+                    Depois que o Demise e morto com sucesso, varios moradores da atual Skyloft, incluindo
+                    Gaepora, Cawlin e Strich viajam para a superficie e aparentemente descobrem suas verdadeiras origens. Desde entao
+                    parece que com o tempo, as pessoas da Skyloft escolheram ficar no mundo da superficie assim como Link e Zelda. A
+                    regiao onde esses seres humanos comecaram a viver no mundo da superficie veio a ser conhecido como o
+                    Reino de Hyrule, referenciando a deusa Hylia.
+                </p>
+            </div>
+
+            <!-- Thunderhead -->
+            <div class="item" id="thunderhead">
+                <p class="titulocenario">Thunderhead</p>
+                
+                <p class="descricao">
+                    The Thunderhead e uma gigantesca nuvem de tempestade perto do Skyloft. Ao redor
+                    do lado de fora do Thunderhead, os tornados sao comuns. No interior de Thunderhead, ocorrem muitos relâmpagos, embora
+                    acabem parando quando o parasita Bilocyte e derrotado. O espirito do ceu, Levias, habita a area vigiando o ceu. O
+                    Thunderhead abriga a Isle of Songs, Bug Rock e varias outras ilhas, algumas das quais contem Baus de Deusas. Embora se
+                    note que o Thunderhead apareceu repentinamente no ceu, nao ha mais detalhes sobre sua origem.
+                </p>
+
+                <img class="imagem" src="../imagem/cenarios/thunderhead.png"/>
+                <p class="legenda">Link em seu Loftwing em direção ao Thunderhead</p>
+
+                <img class="imagem" src="../imagem/cenarios/levias.jpg"/>
+                <p class="legenda">Link em seu Loftwing e Levias</p>
+                
+                <p style="font-size: 30pt">Sua influencia na historia:</p>
+                <p class="descricao">
+                    Uma vez que o espelho e ativado no topo da Torre de Luz (em Skyloft), ele reflete um feixe de energia verde que separa as nuvens
+                    cobrindo a entrada. Isso permite que o Link acesse o Thunderhead e entre na Isle of Songs, que abriga tres musicas
+                    que o jovem heroi deve aprender: "Coragem de Farore", "Sabedoria de Nayru" e "Poder de Din". Mais tarde, Link deve derrotar
+                    Bilocito, um parasita que infecta o rspirito do ceu Levias, para aprender sobre as quatro partes de "Song of the Hero" necessarias para
+                    encontrar a Triforce. Depois que o jovem heroi aprende as tres primeiras partes dos tres Dragoes Sagrados na Superfície, ele
+                    deve voltar para o Thunderheard para aprender a parte final da "Cançao do Heroi".
+                </p>
+                
+                <video style="width: 98%; height: auto;" controls>
+                    <source src="../videos/song_of_the_hero.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="legenda">Levias ensinando a canção completa do Song of the Hero</p>
+                
+                <video style="width: 98%; height: auto;" controls>
+                    <source src="../videos/gameplay_thunderhead.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="legenda">Resolvendo puzzle dentro do Thunderhead</p>
+                        
+                        
+            </div>
+            
+            <!-- Pumpkin Landing -->
+            <div class="item" id="pumpkin">
+                <p class="titulocenario">Pumpkin Landing</p>
+                <p class="descricao">
+                    Pumpkin Landing e uma ilha no ceu que so pode ser acessado via Loftwing, um lugar onde 
+                    abriga o bar Lumpy Pumpkin, bem como um canteiro de jardim no qual cresce aboboras. Ringers sao conhecidos por se
+                    reunir no topo desta ilha.
+                </p>
+                <img class="imagem" src="../imagem/cenarios/pumpkin.png"/>
+                <p class="legenda">Link e seu Loftwing em cima da Pumpkin Landing</p>
+
+                <p class="descricao">
+                    Os Ringers vagamente se assemelham a um cruzamento entre um esquilo voador e
+                    uma raposa voadora, e aparecem nas cores de varias rupees. Eles tambem tem tres caudas bastante espessas. Quando Link esta
+                    saltando antes de usar o para-quedas, um grupo de Ringers pode cerca-lo, caindo livremente ao lado do heroi. Se Link
+                    conseguir tocar todos os Ringers no grupo antes de chegar ao chao, ele e recompensado com Rupees
+                    correspondendo as variedades de Ringers tocados.
+                </p>
+                <img class="imagem" style="margin-left: calc(100% - 90%);" src="../imagem/ringer.png"/>
+                <p class="legenda">Ringer da cor vermelha</p>
+                <p class="descricao">
+                    Pumpkin Landing e o lar do Lumpy Pumpkin, um bar em forma de abobora. Link pode participar de uma serie de sidequests
+                    neste lugar depois de danificar um candelabro em busca de um pedaço de coraçao. Dois desses sidequests, ambos envolvendo Kina,
+                    cujo pai Pumm e dono do Lumpy Pumpkin, sao realizados fora do estabelecimento. Link pode ajudar as aboboras da colheita
+                    de Kina carregando cinco delas de uma so vez para o galpao e recebendo cinco Cristais de Gratidao por resolver seu problema.
+                </p>
+                
+                <img style="margin-left:calc(100% - 55%);max-height: 40%;max-width: auto;" src="../imagem/kina.png"/>
+                <p class="legenda">Kina</p>
+                
+                <img style="margin-left:calc(100% - 58%);max-height: 40%;max-width: auto;" src="../imagem/pumm.png"/>
+                <p class="legenda">Kina</p>
+                
+
+                <p class="descricao">
+                    Mais
+                    tarde, Kina pede ajuda para localizar alguem que possa ajudar a arar o canteiro de aboboras. Link pode usar a
+                    habilidade da Goddess Sword de Dowsing para encontrar o idoso Mogma, Guld, no Vulcao Eldin disposto a viajar para o Ceu. Quando
+                    Link o encontra, Fi envia uma transmissao para Scrapper, que leva o Mogma para o ceu. Quando eles chegam, o Anciao Mogma
+                    está inicialmente irritado porque está sendo solicitado a trabalhar em um campo, mas ele aceita alegremente depois que
+                    Kina o elogia por suas proezas de escavaçao, e Link recebe outros cinco Cristais de Gratidao.
+                </p>
+
+                <img style="margin-left:calc(100% - 60%);max-height: 40%;max-width: auto;" src="../imagem/guld.png"/>
+                <p class="legenda">Guld</p>
+
+                <img style="margin-left:calc(100% - 64%);max-height: 40%;max-width: auto;" src="../imagem/scrapper.png"/>
+                <p class="legenda">Scrapper</p>
+
+                <img class="imagem" style="" src="../imagem/cenarios/lumpy.jpg"/>
+                <p class="legenda">Lumpy Pumpkin</p>
+            </div>
+
+            <!-- Outras Ilhas -->
+            <div class="item" id="outrasIlhas">
+
+
+                <!-- Fun Fun Island -->
+                <p class="titulocenario">Fun Fun Island</p>
+                <p class="descricao">
+                    Fun Fun Island e um lugar no ceu, localizado perto de Skyloft. A ilha inteira e usada para um minigame,
+                    mas Link nao pode acessar este minigame ate que ele tenha ajudado Dodoh. Um baú de deusa com uma rupee dourada pode ser
+                    encontrado embaixo da ilha.
+                </p>
+                <p class="descricao">
+                    Para iniciar o minigame nesta ilha, conhecido como Dodoh's High Dive, Link deve pular em um canhao que o lançara direto
+                    para cima. Neste ponto, a ilha começa a girar e Link se encontrara em queda livre. O objetivo principal e pousar em um
+                    espaço colorido na placa giratoria (roleta) abaixo. Cada cor corresponde a um valor de rupee diferente. Para aumentar seus lucros,
+                    Link pode passar por Anel da Fortuna enquanto cai. Cada anel aumenta o
+                    multiplicador de premios e desacelera a placa girataria. Ao mesmo tempo, Link deve evitar bolas gigantes de Dodoh que
+                    redefinam o multiplicador para zero.
+                </p>
+                
+                <img class="imagem" style="max-height:auto; min-width: 95%;" src="../imagem/cenarios/fun_fun_island.jpg"/>
+                <p class="legenda" >Dodoh e Link em Fun Fun Island</p>
+                
+                <hr style="border: 2px dashed black;"/>
+                
+                <!-- Bamboo Island -->
+                <p class="titulocenario">Bamboo Island</p>
+                <p class="descricao">
+                    A Bamboo Island e uma pequena ilha, com um edifecio no meio, redondo e sem teto que se assemelha muito ao bambu. Ha algumas
+                    plantas de bambu decorando a entrada do minigame e uma pequena passarela de pedra. Ele engloba uma pequena floresta de
+                    bambu no interior, que pode ser vista claramente brotando do topo da estrutura pelo lado de fora.
+                    E aqui dentro do pequeno edificio redondo que Link pode participar no mini-jogo Clean Cut, dirigido por Peater, que treina na ilha durante o dia.
+                </p>
+                <img class="imagem" style="max-height:auto; min-width: 95%;" src="../imagem/cenarios/bamboo_island.png"/>
+                <p class="legenda" >Link e seu Loftwing em Bamboo Island</p>
+                
+                <hr style="border: 2px dashed black;"/>
+
+                <!-- Beedle's Island -->
+                <p class="titulocenario">Beedle's Island</p>
+                <p class="descricao">
+                    Beedle's Island é uma pequena ilha no The Sky a nordeste de Skyloft e lar de Beedle, que pode ser encontrado na ilha
+                    durante a noite. Ele abriga uma grande estrutura de madeira na qual a Bumblele's Airshop fica durante a noite, uma area
+                    de armazenamento, uma fogueira e uma arvore.
+                </p>
+                <p class="descricao"> 
+                    A ilha de Beedle pode ser alcançada por Loftwing durante o dia. Infelizmente, Link nao consegue interagir com Beedle,
+                    que estara vendendo seus produtos em Skyloft para os seus habitantes. No entanto, adormecer na cama dentro de sua Airshop
+                    permitira que o jovem heroi acesse a ilha durante a noite. A noite, Beedle vai sentar e conversar com Link enquanto
+                    admira seu Horned Colossus Beetle (inseto), que esta enjaulado em seu colo.
+                </p>
+                <img class="imagem" style="max-height:auto; min-width: 95%;" src="../imagem/cenarios/beedles_island.png"/>
+                <p class="legenda" >Beedle's Island</p>
+
+                <hr style="border: 2px dashed black;"/>
+
+                <!-- Demais Ilhas -->
+                <p class="titulocenario">Demais Ilhas</p>
+                <p class="descricao">
+                    Existem outras ilhas no ceu, porem de tamanho menores e que nao sao relevantes para o desenrolar da historia
+                    do jogo. Nessas outras ilhas e capaz de encontrar baus com rupees de valores variados. Goddess Cubes que servem para
+                    liberar Goddess Chest e baus normais com itens como pocao e mochila para aumentar espaco do inventario.
+                </p>
+
+                <img class="imagem"  src="../imagem/cenarios/sky.png"/>
+                <p class="legenda" >Link e Fi no descendo para a superfície</p>
+
+            </div>
+
+            <!-- Faron Woods e região -->
+            <div class="item" id="faron">
+                <!-- Sealed Grounds -->
+                <p class="titulocenario">Sealed Grounds</p>
+                <p class="descricao">
+                    O Sealed Grounds e a primeira area na superficie que o Link explora depois de descer do ceu. O Terreno Selado
+                    consiste em um grande poço que espirala para baixo, alinhado por uma serie de aberturas de ventilacao, e contem uma
+                    estaca selante magica pelo qual o O Imprisoned e mantido. No topo do poco esta o Templo Selado, que se conecta a Faron
+                    Woods atraves de uma pequena clareira encontrada fora de sua saida leste. Ao longo de sua jornada, Link retorna a esta
+                    area varias vezes para afastar The Imprisoned enquanto quebra seu selo e sobe o caminho da espiral em direcao ao Templo.
+                </p>
+                <img class="imagem" src="../imagem/cenarios/sealed_grounds.png"/>
+                <p class="legenda">Sealed Ground</p>
+                
+                <hr style="border: 2px dashed black;"/>
+
+                <!-- Faron Woods -->
+                <p class="titulocenario">Faron Woods</p>
+                <p class="descricao">
+                    Faron Woods e o primeiro lugar que Link visita na superficie depois de sair da Skyloft. Enquanto segue a trilha de Zelda, Link
+                    procura por membros da raça Kikwi usando a habilidade Dowsing da Goddess Sword, encontrando-os escondidos da invasao
+                    Bokoblins em muitos lugares em toda a floresta. Ao descobrir cada uma dessas criaturas parecidas com plantas,
+                    o ancião Kikwi, Bucha, da a Link o estilingue. Com o estilingue, Link e capaz de continuar para a parte mais profunda do
+                    floresta conhecida como Deep Woods, e mais tarde o Skyview Temple.
+                </p>
+                <img class="imagem" src="../imagem/cenarios/faron-woods.png"/>
+                <p class="legenda">Pintura de Faron Woods</p>
+                
+                <hr style="border: 2px dashed black;"/>
+                
+                <!-- Deep Woods -->
+                <p class="titulocenario">Deep Woods</p>
+                <p class="descricao">
+                    A Deep Woods fica no coracao do Faron Woods. Torna-se acessivel uma vez que Link consegue localizar todos os Kikwis
+                    desaparecidos para o Kikwi Elder, Bucha, e e recompensado com o estilingue. Consiste em um pequeno caminho de ramificacao
+                    ao longo de um grande desfiladeiro. Muitas cordas bambas, atuando como pontes entre secoes do canion para outras partes
+                    da floresta, levam a atalhos e tesouros. Restos do antigo templo estao espalhados por toda a floresta. The Deep
+                    Woods contem a primeira interacao de Link com Goddess Cubes, que Gorko o Goron vem investigando como parte de sua
+                    pesquisa.
+                </p>
+                
+                <hr style="border: 2px dashed black;"/>
+                
+                <!-- Skyview Spring -->
+                <p class="titulocenario">Skyview Spring</p>
+                <p class="descricao">
+                    A Skyview Spring encontra-se no interior do Skyview Temple e esta repleta de cachoeira cenicas e agua sagrada. A primeira visita de Link
+                    em Skyview Spring foi com a intenção de encontrar Zelda nas fontes, mas sua luta com Ghirahim impede isso.
+                    No final da fonte, Link encontra uma crista que e similar em aparencia a crista encontrada dentro da Estatua da
+                    Deusa. Link deve executar um Skyward Strike na crista para ativa-lo.
+                </p>
+                <p class="descricao">
+                    Fi diz que ela tem uma mensagem dos deuses do antigo e começa a traduzi-lo para ele. O texto da mensagem afirma que
+                    a donzela do espírito (Zelda) partiu para um segundo lugar sagrado semelhante ao da Skyview Spring, conhecida como a Earth Spring
+                    . Apos a conclusao da traducao, o Link recebe o Tablet de Ruby.
+                </p>
+
+                <video style="width: 98%; height: auto;" controls>
+                    <source src="../videos/skyview_spring.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="legenda">Link chegando na Skyview Spring</p>
+
+            </div>
+
+            <!-- Eldin Volcano -->
+            <div class="item" id="eldin">
+                <!-- Eldin Volcano -->
+                <p class="titulocenario">Eldin Volcano</p>
+                <p class="descricao">
+                    Em algum momento no passado, o Vulcao Eldin era um lugar pacifico e prospero, onde as pessoas, tanto acima como abaixo,
+                    viviam juntas em harmonia pela bencao da grande montanha. No presente, tornou-se um lugar infelizmente perigoso e
+                    implacavel, cheio de desolacao e caos.
+                </p>
+                <p class="descricao">
+                    E a segunda localização na superficie que Link visitas em sua busca para encontrar Zelda. Quando Link chega, ele aprende
+                    com os Mogmas locais que os Bokoblins começaram a aparecer em todo o Eldin Volcano, montando acampamentos e espantando
+                    os Mogmas da area. Link sobe o vulcao e eventualmente chega a entrada do Templo da Terra, onde ele ve Ledd e
+                    Cobal discutindo como entrar no templo. Ao ouvir a conversa, Link descobre que Zelda foi capturada e levada para o
+                    Templo por Bokoblins e que eles quebraram a chave que destrava a porta em cinco pedaços. Cobal sugere a Ledd que
+                    eles cavem seu caminho ate o Templo, em vez de encontrar os Pedaços da Chave. Os dois mogmas procedem cavando seu
+                    caminho sob o templo para entrar, deixando Link para buscar os pedacos ocultos da chave. Depois de encontrar todos os
+                    cinco pedacos, Link monta a chave e destrava a porta do Templo da Terra, que ele entra em busca de Zelda.
+                </p>
+                <img class="imagem" src="../imagem/cenarios/eldin_volcano.png"/>
+                <p class="legenda">Pintura de Eldin Volcano</p>
+                
+                <hr style="border: 2px dashed black;"/>
+                
+                <!-- Earth Spring -->
+                <p class="titulocenario">Earth Spring</p>
+                <p class="descricao">
+                    
+                    A Earth Spring e uma nascente subterranea localizada no interior do Templo da Terra. Link visita a fonte em
+                    sua busca por Zelda, que se diz estar se limpando nas águas da fonte. Ele a encontra na fonte e a observa
+                    tocando a Harpa da Deusa com uma Serva da Deusa chamada Impa. Impa o repreende por demorar muito para alcançar a
+                    fonte, e as duas partem. Link entao realiza outro Skyward Strike em uma crista da Deusa  permitindo que Fi receba
+                    outra mensagem dos "deuses antigos", que ela começa a traduzir para o jovem heroi. Apos a conclusao, a traducao
+                    revela que Zelda esta indo para uma regiao chamada Deserto de Lanayru. Como um presente dos deuses, Link recebe o
+                    Tablet de Amber, que cria uma fenda nas nuvens que levam ao deserto de Lanayru.
+                </p>
+                <video style="width: 98%; height: auto;" controls>
+                    <source src="../videos/earth_spring.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="legenda">Link chegando na Skyview Spring</p>
+                
+            </div>
+
+            <div class="item" id="lanayru">
+                <!-- Lanayru Desert -->
+                <p class="titulocenario">Lanayru Desert</p>
+                <p class="descricao">
+                    O deserto de Lanayru, juntamente com o resto da provincia de Lanayru, era uma vez uma vasta paisagem verde, habitada por
+                    uma civilizacao tecnologicamente avancada que usava robos para realizar varias tarefas de mineracao na area. No entanto,
+                    a mudanca climatica transformou lentamente a outrora prospera regiao em um deserto ao longo de varios seculos,
+                    deixando todos os recursos naturais da regiao esgotados; tudo o que resta da outrora terra verde e um vasto deserto com
+                    muitos perigos, como o Sinksand. Junto com a decadencia da terra verde, um mar de areia esta agora localizado onde o
+                    grande mar ja foi.
+                </p>
+                <p class="descricao"> 
+                    Link primeiro visita o deserto, enquanto em busca de sua amiga de infancia Zelda.Link encontra-se em uma area conhecida
+                    como Mina Lanayru. A Mina em si era um dos locais notaveis ​​onde os antigos robos estavam minerando para Timeshift
+                    Stones (pedra que faz tudo em sua volta voltar no tempo), que servem como sua principal fonte de energia.
+                </p>
+
+                <img class="imagem" src="../imagem/cenarios/Lanayru_Desert.png">
+                <p class="legenda">Lanayru Desert</p>
+
+
+                <hr style="border: 2px dashed black;"/>
+                
+                <!-- Lanayru Sand Sea -->
+                <p class="titulocenario">Lanayru Sand Sea</p>
+                <p class="descricao">
+                    O Lanayru Sand Sea costumava ser um otimo mar. No entanto, devido a uma rapida mudanca climatica, a agua evaporou,
+                    deixando o mar em seu estado atual de dessecacao. Link deve navegar pelo mar com a lancha do Skipper, que e
+                    equipada com uma Timeshift Stone. Enquanto Link navega pelo deserto, a areia ao redor dele se transformara em agua
+                    devido ao campo de rompimento temporal da pedra.
+                </p>
+                <img class="imagem" src="../imagem/cenarios/Lanayru_Sand_Sea.png">
+                <p class="legenda">Lanayru Sand Sea</p>
+
+                <hr style="border: 2px dashed black;"/>
+                <!-- Lanayru Mining Facility -->
+                <p class="titulocenario">Lanayru Mining Facility</p>
+                <p class="descricao">
+                    O Lanayru Mining Facility e o terceiro calabouco no jogo. E muito especial entre a maioria das
+                    masmorras da historia da serie The Legend of Zelda, sendo uma instalacao tecnologicamente avancada, executada por robos
+                    antigos e contendo dentro delas correias transportadoras e uso frequente de eletricidade em um mundo que e tipicamente
+                    mostrado como tendo um tema medieval. A instalacao em si parece ser uma refinaria ou uma fabrica de algum tipo para
+                    Timeshift Stones.
+                </p>
+                <p class="descricao">
+                    Para acessar as instalacoes de mineracao, Link deve ativar os tres nos de energia, que energizam o gerador de energia
+                    que pode elevar a entrada da instalacao de mineracao a partir do solo. Ao faze-lo, ele sobe para fora da areia e o jovem
+                    heroi se aventura por dentro, obtendo o Gust Bellows e lutando contra o chefe da instalaçao, o Moldarach, um grande e
+                    completo Aracha. Depois de derrotar Moldarach, Link entra no Templo do Tempo, descobrindo Zelda e Impa em um dos dois
+                    Portoes do Tempo sobreviventes. No entanto, antes de Link se reunir com Zelda, Ghirahim rompe os escombros na entrada.
+                    Ele se envolve em batalha com Impa, enquanto Zelda da a Link a Harpa da Deusa. Com a ajuda de Link, Zelda e Impa
+                    escapam pelo portao, destruindo-o atras deles.
+                </p>
+                <img class="imagem" src="../imagem/cenarios/Lanayru_Mining_Facility.png">
+                <p class="legenda">Lanayru Mining Facility</p>
+
+                <video style="width: 98%; height: auto;" controls>
+                    <source src="../videos/gate_of_time.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="legenda">Link chegando no Gate of Time</p>
+                
+
+
+
+            </div>
+        </aside>
+    </section>
+
+    <footer id="rodape">
+        <nav id="menurodape">
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+            </ul>
+        </nav>
+        <h1 class="indexador">Rodapé</h1>
+    </footer>
+
+    <!-- Musicas da pagina -->
+    <div id="audio" onclick="mutarMusicas()"><img id="imgaudio" style="width: 60px" src="../imagem/som_ligado.png"/></div>
+    <div style="opacity: 0;">
+            <audio loop id="audioskyloft">
+                <source src="../musicas/skyloft.mp3">
+            </audio>
+
+            <audio loop id="audiothunderhead">
+                <source src="../musicas/the_sky.mp3">
+            </audio>
+
+            <audio loop id="audiooutrasIlhas">
+                <source src="../musicas/island_in_the_sky.mp3">
+            </audio>
+
+            <audio loop id="audiopumpkin">
+                <source src="../musicas/pumpkin.mp3">
+            </audio>
+
+            <audio loop id="audiofaron">
+                <source src="../musicas/faron_woods.mp3">
+            </audio>
+
+            <audio loop id="audioeldin">
+                <source src="../musicas/eldin_volcano.mp3">
+            </audio>
+
+            <audio loop id="audiolanayru">
+                <source src="../musicas/lanayru_desert.mp3">
+            </audio>
+    </div>
+</body>
+
+</html>

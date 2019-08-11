@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'SubTituloFont';
+    src: url('../font/ReturnofGanon.ttf') format('truetype')
+}
+
+
+div#audio{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 2;
+}
+
+section#interface{
+    display: inline-flex;
+    height: 700px;
+}
+
+section#interface div#menulateral{
+    margin-top: -30px;
+    background-color: #dfad50;
+    width: 25%;
+    height: 900px;
+    border: 1px solid black;
+}
+
+section#interface div#menulateral div#divmapa{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32pt;
+    font-family: ZeldaFont;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    background-color: #aa8339;
+    border-bottom: 1px dashed black;
+}
+
+section#interface div#menulateral div#divmapa:hover{
+    background-color: #966712;
+}
+
+section#interface div#menulateral div#divmapa img#mapaicon{
+    width: 90px;
+    height: auto;
+}
+
+
+section#interface div#menulateral p.titulo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32pt;
+    font-family: ZeldaFont;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    background-color: #aa8339;
+    margin:0px;
+    width: 100%;
+}
+
+section#interface div#menulateral ul{
+    list-style-type: none;
+}
+
+section#interface div#menulateral ul li{
+    font-size: 25pt;
+    line-height: 45px;
+    font-family: SubTituloFont;
+}
+section#interface div#menulateral ul li:hover{
+    color: rgb(255, 255, 6);
+}
+
+section#interface aside#cenarios img.imagem{
+    max-width: 95%;  
+    min-width: 95%;
+    min-height: auto;
+    margin-left: calc(100% - 98%);
+    margin-top: 20px;
+}
+
+section#interface aside#cenarios{
+    position: relative;
+    width: 66%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right:45px;
+    margin:20px;
+    border: 1px solid black;
+    background-color: #b4b0b054;
+    opacity: 0;
+}
+
+section#interface aside#cenarios div{
+    position: relative;
+    height: 100%;
+    width: 97,5%;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+    font-family: SubTituloFont;
+    font-size: 22pt;
+}
+
+section#interface aside#cenarios div.item{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    float: left;
+    padding-left: 20px;
+}
+
+section#interface aside#cenarios div.item p.titulocenario{
+    margin: 10px 50px 0px;
+    text-align: center;
+    font-family: ZeldaFont;
+    font-size: 50pt;
+    color: rgb(233, 2, 2);
+}
+section#interface aside#cenarios div.item p.legenda{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14pt;
+}
+section#interface aside#cenarios p.descricao{
+    margin-left: 50px;
+}
+
+footer#rodape{
+    top:1000px;
+}
+
+

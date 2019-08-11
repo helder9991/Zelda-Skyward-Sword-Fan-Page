@@ -1,0 +1,12 @@
+
+section#interface p{
+    font-family: 'Arial';
+}
+section#interface p.texto2{
+    margin-left: 120px;
+    font-size: 16pt;
+}
+
+footer#rodape{
+    top:700px;
+}

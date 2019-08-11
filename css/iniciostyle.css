@@ -1,0 +1,155 @@
+
+@font-face {
+    font-family: 'ZeldaFont';
+    src: url('../font/Triforce.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Texto';
+    src: url('../font/ReturnofGanon.ttf') format('truetype')
+}
+
+
+html,body{
+    background-color: black;
+    margin: 0px;
+    display: block;
+    width: 100%;
+    background: url(../imagem/fundo_pergaminio.jpg);
+}
+header#cabecalho{
+    background: url("../imagem/menubackground2.jpg");
+    height: 250px;
+    width: 100%;
+    position: absolute;
+}
+
+header#cabecalho img#logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: auto;
+}
+
+header#cabecalho nav#menu{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+header#cabecalho nav#menu ul{
+    list-style-type: none;
+    margin-left: 180px;
+}
+header#cabecalho nav#menu ul li{
+    display: inline-flex;
+    height: 40px;
+    background-color: #12073ba9;
+    border-right-width: 1px;
+    border-color: black;
+    border-right: 1px;
+    border-radius: 5%;
+    vertical-align: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header#cabecalho nav#menu ul li a{
+    width: 100%;
+    padding: 5px 20px 0px;
+    font-family: ZeldaFont;
+    color: rgb(233, 2, 2);
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+header#cabecalho nav#menu ul li a:hover{
+    text-decoration: underline;
+    color: #877cb0;
+}
+
+
+h1.indexador{
+    opacity: 0;
+}
+
+section#interface{
+    display: block;
+    margin-top: 260px;
+    float: left;
+    height: 600px;
+    width: 100%;
+}
+section#interface h1#titulo{
+    font-family: ZeldaFont;
+    font-size: 25pt;
+    color: rgb(218, 0, 0);
+    text-align: center;
+    
+}
+
+section#interface div.texto1{
+    display: inline-flex;
+}
+
+section#interface p{
+    width: 85%;
+    font-family: Texto;
+    font-size: 26pt;
+    text-align: justify;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+section#interface p.p1{
+    width: 70%;
+}
+
+section#interface div.texto1 img#capa{
+    height: 350px;
+    width: auto;
+    margin-left: 30px;
+    margin-top: 60px;
+   
+}
+
+
+
+footer#rodape{
+    height: 100px;
+    position: absolute;
+    top:1500px;
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #12073b;
+}
+
+
+footer#rodape nav#menurodape{
+    position:absolute;
+    top: 20px;
+    left: calc((100% - 902px)/2);
+}
+
+footer#rodape nav#menurodape ul{
+    list-style-type: none;
+    margin-left: 180px;
+}
+footer#rodape nav#menurodape ul li{
+    display: inline-flex;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer#rodape nav#menurodape ul li a{
+    width: 100%;
+    padding: 5px 20px 0px;
+    font-family: ZeldaFont;
+    color: #877cb0;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+footer#rodape nav#menurodape ul li a:hover{
+    text-decoration: underline;
+    color: #877cb0;
+}
